@@ -1,0 +1,9 @@
+<launch>
+
+<rosparam file="$(find RPlidar_description)/launch/controller.yaml" command="load"/>
+<node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen" ns="RPlidar" args="회전 35_position_controller 회전 36_position_controller 회전 37_position_controller 회전 38_position_controller 회전 39_position_controller 회전 40_position_controller 회전 41_position_controller 회전 42_position_controller 회전 43_position_controller 회전 44_position_controller 회전 45_position_controller 회전 46_position_controller 회전 47_position_controller joint_state_controller "/>
+<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen">
+  <remap from="/joint_states" to="/RPlidar/joint_states"/>
+</node>
+
+</launch>

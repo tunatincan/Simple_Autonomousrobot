@@ -1,0 +1,394 @@
+<?xml version="1.0" ?>
+<robot name="RPlidar" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find RPlidar_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find RPlidar_description)/urdf/RPlidar.trans" />
+<xacro:include filename="$(find RPlidar_description)/urdf/RPlidar.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.14007267895064426 0.029229102085798254 0.140001174560788" rpy="0 0 0"/>
+    <mass value="18.6160315371457"/>
+    <inertia ixx="0.159542" iyy="0.249041" izz="0.128098" ixy="1.7e-05" iyz="-3.9e-05" ixz="0.000108"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RPlidar_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RPlidar_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Caster_Yoke_FR_1">
+  <inertial>
+    <origin xyz="-5.684200660160954e-08 -0.011033540762861936 -0.008878970041105688" rpy="0 0 0"/>
+    <mass value="0.05022857989662111"/>
+    <inertia ixx="1.1e-05" iyy="1.2e-05" izz="1.3e-05" ixy="-0.0" iyz="-3e-06" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.04 0.012883 -0.24" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RPlidar_description/meshes/Caster_Yoke_FR_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.04 0.012883 -0.24" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RPlidar_description/meshes/Caster_Yoke_FR_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Caster_Yoke_RR_1">
+  <inertial>
+    <origin xyz="-5.598518985905354e-08 -0.011033540762861933 -0.008878963980058219" rpy="0 0 0"/>
+    <mass value="0.050228579896621"/>
+    <inertia ixx="1.1e-05" iyy="1.2e-05" izz="1.3e-05" ixy="-0.0" iyz="-3e-06" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.04 0.012883 -0.04" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RPlidar_description/meshes/Caster_Yoke_RR_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.04 0.012883 -0.04" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RPlidar_description/meshes/Caster_Yoke_RR_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Caster_Yoke_RL_1">
+  <inertial>
+    <origin xyz="-5.2498319025318096e-08 -0.011033540762861933 -0.008878963980058219" rpy="0 0 0"/>
+    <mass value="0.050228579896621"/>
+    <inertia ixx="1.1e-05" iyy="1.2e-05" izz="1.3e-05" ixy="-0.0" iyz="-3e-06" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.24 0.012883 -0.04" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RPlidar_description/meshes/Caster_Yoke_RL_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.24 0.012883 -0.04" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RPlidar_description/meshes/Caster_Yoke_RL_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Caster_Yoke_FL_1">
+  <inertial>
+    <origin xyz="-5.2498319025318096e-08 -0.011033540762861933 -0.008878960597494712" rpy="0 0 0"/>
+    <mass value="0.050228579896621"/>
+    <inertia ixx="1.1e-05" iyy="1.2e-05" izz="1.3e-05" ixy="-0.0" iyz="-3e-06" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.24 0.012883 -0.24" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RPlidar_description/meshes/Caster_Yoke_FL_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.24 0.012883 -0.24" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RPlidar_description/meshes/Caster_Yoke_FL_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Caster_Wheel_FR_1">
+  <inertial>
+    <origin xyz="-0.011049000514089635 -2.699999999689062e-07 4.943338160479094e-07" rpy="0 0 0"/>
+    <mass value="0.20926625332953513"/>
+    <inertia ixx="4.4e-05" iyy="3e-05" izz="3e-05" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.051049 0.039076 -0.222537" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RPlidar_description/meshes/Caster_Wheel_FR_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.051049 0.039076 -0.222537" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RPlidar_description/meshes/Caster_Wheel_FR_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Caster_Wheel_RL_1">
+  <inertial>
+    <origin xyz="-0.011048996170402059 -2.6999999996196733e-07 -4.996051364454523e-07" rpy="0 0 0"/>
+    <mass value="0.20926625332953513"/>
+    <inertia ixx="4.4e-05" iyy="3e-05" izz="3e-05" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.251049 0.039076 -0.022538" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RPlidar_description/meshes/Caster_Wheel_RL_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.251049 0.039076 -0.022538" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RPlidar_description/meshes/Caster_Wheel_RL_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Caster_Wheel_FL_1">
+  <inertial>
+    <origin xyz="-0.011048996170402087 -2.699999999689062e-07 -4.962225730043013e-07" rpy="0 0 0"/>
+    <mass value="0.20926625332953513"/>
+    <inertia ixx="4.4e-05" iyy="3e-05" izz="3e-05" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.251049 0.039076 -0.222538" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RPlidar_description/meshes/Caster_Wheel_FL_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.251049 0.039076 -0.222538" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RPlidar_description/meshes/Caster_Wheel_FL_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Caster_Wheel_RR_1">
+  <inertial>
+    <origin xyz="-0.011048999657272886 -2.6999999996196733e-07 -4.996051364454523e-07" rpy="0 0 0"/>
+    <mass value="0.20926625332953513"/>
+    <inertia ixx="4.4e-05" iyy="3e-05" izz="3e-05" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.051049 0.039076 -0.022538" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RPlidar_description/meshes/Caster_Wheel_RR_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.051049 0.039076 -0.022538" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RPlidar_description/meshes/Caster_Wheel_RR_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Shock_link_Mirror__1">
+  <inertial>
+    <origin xyz="-0.0069246892382837655 -0.018525257124852285 -0.1074621910769317" rpy="0 0 0"/>
+    <mass value="0.6176496033582601"/>
+    <inertia ixx="0.00114" iyy="0.000979" izz="0.000385" ixy="-1.8e-05" iyz="-0.000224" ixz="-2.3e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.2298 -0.03 -0.2655" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RPlidar_description/meshes/Shock_link_Mirror__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.2298 -0.03 -0.2655" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RPlidar_description/meshes/Shock_link_Mirror__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Shock_link_1">
+  <inertial>
+    <origin xyz="0.006924580318727426 -0.018525257124852604 -0.10746357935620565" rpy="0 0 0"/>
+    <mass value="0.6176496033581683"/>
+    <inertia ixx="0.00114" iyy="0.000979" izz="0.000385" ixy="1.8e-05" iyz="-0.000224" ixz="2.3e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0502 -0.03 -0.2655" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RPlidar_description/meshes/Shock_link_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0502 -0.03 -0.2655" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RPlidar_description/meshes/Shock_link_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="LeftWheel_1">
+  <inertial>
+    <origin xyz="0.005959817167343007 -8.728067601992961e-09 4.6617162530182554e-07" rpy="0 0 0"/>
+    <mass value="0.27261079209560873"/>
+    <inertia ixx="0.0002" iyy="0.000119" izz="0.000119" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.259953 0.025 -0.14" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RPlidar_description/meshes/LeftWheel_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.259953 0.025 -0.14" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RPlidar_description/meshes/LeftWheel_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RightWheel_1">
+  <inertial>
+    <origin xyz="-0.005959124266262781 -8.728067716484711e-09 -2.2028805116147687e-07" rpy="0 0 0"/>
+    <mass value="0.2726107920956101"/>
+    <inertia ixx="0.0002" iyy="0.000119" izz="0.000119" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.020046 0.025 -0.14" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RPlidar_description/meshes/RightWheel_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.020046 0.025 -0.14" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RPlidar_description/meshes/RightWheel_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Lidar_Link_1">
+  <inertial>
+    <origin xyz="0.0006562947807148001 0.015557155041331316 -0.0005492767098540519" rpy="0 0 0"/>
+    <mass value="0.3099811279187926"/>
+    <inertia ixx="0.000126" iyy="0.000186" izz="0.000109" ixy="-1e-06" iyz="2e-06" ixz="-2e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.139485 -0.109 -0.140506" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RPlidar_description/meshes/Lidar_Link_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.139485 -0.109 -0.140506" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RPlidar_description/meshes/Lidar_Link_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="회전 35" type="continuous">
+  <origin xyz="0.04 -0.012883 0.24" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Caster_Yoke_FR_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="회전 36" type="continuous">
+  <origin xyz="0.04 -0.012883 0.04" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Caster_Yoke_RR_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="회전 37" type="continuous">
+  <origin xyz="0.24 -0.012883 0.04" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Caster_Yoke_RL_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="회전 38" type="continuous">
+  <origin xyz="0.24 -0.012883 0.24" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Caster_Yoke_FL_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="회전 39" type="continuous">
+  <origin xyz="0.011049 -0.026193 -0.017463" rpy="0 0 0"/>
+  <parent link="Caster_Yoke_FR_1"/>
+  <child link="Caster_Wheel_FR_1"/>
+  <axis xyz="1.0 0.0 -0.0"/>
+</joint>
+
+<joint name="회전 40" type="continuous">
+  <origin xyz="0.011049 -0.026193 -0.017462" rpy="0 0 0"/>
+  <parent link="Caster_Yoke_RL_1"/>
+  <child link="Caster_Wheel_RL_1"/>
+  <axis xyz="1.0 0.0 -0.0"/>
+</joint>
+
+<joint name="회전 41" type="continuous">
+  <origin xyz="0.011049 -0.026193 -0.017462" rpy="0 0 0"/>
+  <parent link="Caster_Yoke_FL_1"/>
+  <child link="Caster_Wheel_FL_1"/>
+  <axis xyz="1.0 -0.0 -0.0"/>
+</joint>
+
+<joint name="회전 42" type="continuous">
+  <origin xyz="0.011049 -0.026193 -0.017462" rpy="0 0 0"/>
+  <parent link="Caster_Yoke_RR_1"/>
+  <child link="Caster_Wheel_RR_1"/>
+  <axis xyz="1.0 0.0 -0.0"/>
+</joint>
+
+<joint name="회전 43" type="revolute">
+  <origin xyz="0.2298 0.03 0.2655" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Shock_link_Mirror__1"/>
+  <axis xyz="-1.0 0.0 0.0"/>
+  <limit upper="0.174533" lower="-0.174533" effort="100" velocity="100"/>
+</joint>
+
+<joint name="회전 44" type="revolute">
+  <origin xyz="0.0502 0.03 0.2655" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Shock_link_1"/>
+  <axis xyz="1.0 0.0 0.0"/>
+  <limit upper="0.174533" lower="-0.174533" effort="100" velocity="100"/>
+</joint>
+
+<joint name="회전 45" type="continuous">
+  <origin xyz="0.030153 -0.055 -0.1255" rpy="0 0 0"/>
+  <parent link="Shock_link_Mirror__1"/>
+  <child link="LeftWheel_1"/>
+  <axis xyz="1.0 -0.0 1e-05"/>
+</joint>
+
+<joint name="회전 46" type="continuous">
+  <origin xyz="-0.030154 -0.055 -0.1255" rpy="0 0 0"/>
+  <parent link="Shock_link_1"/>
+  <child link="RightWheel_1"/>
+  <axis xyz="-1.0 0.0 -1e-05"/>
+</joint>
+
+<joint name="회전 47" type="continuous">
+  <origin xyz="0.139485 0.109 0.140506" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Lidar_Link_1"/>
+  <axis xyz="0.0 -1.0 -0.0"/>
+</joint>
+
+</robot>
