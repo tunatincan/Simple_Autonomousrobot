@@ -1,0 +1,58 @@
+/usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+  warnings.warn(
+running egg_info
+creating ../../build/RPlidar_description/RPlidar_description.egg-info
+writing ../../build/RPlidar_description/RPlidar_description.egg-info/PKG-INFO
+writing dependency_links to ../../build/RPlidar_description/RPlidar_description.egg-info/dependency_links.txt
+writing entry points to ../../build/RPlidar_description/RPlidar_description.egg-info/entry_points.txt
+writing requirements to ../../build/RPlidar_description/RPlidar_description.egg-info/requires.txt
+writing top-level names to ../../build/RPlidar_description/RPlidar_description.egg-info/top_level.txt
+writing manifest file '../../build/RPlidar_description/RPlidar_description.egg-info/SOURCES.txt'
+reading manifest file '../../build/RPlidar_description/RPlidar_description.egg-info/SOURCES.txt'
+writing manifest file '../../build/RPlidar_description/RPlidar_description.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/jinha/rplidar_ws/build/RPlidar_description/build
+creating /home/jinha/rplidar_ws/build/RPlidar_description/build/lib
+creating /home/jinha/rplidar_ws/build/RPlidar_description/build/lib/RPlidar_description
+copying RPlidar_description/__init__.py -> /home/jinha/rplidar_ws/build/RPlidar_description/build/lib/RPlidar_description
+running install
+running install_lib
+creating /home/jinha/rplidar_ws/install/RPlidar_description/lib/python3.10/site-packages/RPlidar_description
+copying /home/jinha/rplidar_ws/build/RPlidar_description/build/lib/RPlidar_description/__init__.py -> /home/jinha/rplidar_ws/install/RPlidar_description/lib/python3.10/site-packages/RPlidar_description
+byte-compiling /home/jinha/rplidar_ws/install/RPlidar_description/lib/python3.10/site-packages/RPlidar_description/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/jinha/rplidar_ws/install/RPlidar_description/share/ament_index
+creating /home/jinha/rplidar_ws/install/RPlidar_description/share/ament_index/resource_index
+creating /home/jinha/rplidar_ws/install/RPlidar_description/share/ament_index/resource_index/packages
+copying resource/RPlidar_description -> /home/jinha/rplidar_ws/install/RPlidar_description/share/ament_index/resource_index/packages
+copying package.xml -> /home/jinha/rplidar_ws/install/RPlidar_description/share/RPlidar_description
+creating /home/jinha/rplidar_ws/install/RPlidar_description/share/RPlidar_description/launch
+copying launch/display.launch.py -> /home/jinha/rplidar_ws/install/RPlidar_description/share/RPlidar_description/launch
+copying launch/gazebo.launch.py -> /home/jinha/rplidar_ws/install/RPlidar_description/share/RPlidar_description/launch
+creating /home/jinha/rplidar_ws/install/RPlidar_description/share/RPlidar_description/urdf
+copying urdf/RPlidar.xacro -> /home/jinha/rplidar_ws/install/RPlidar_description/share/RPlidar_description/urdf
+copying urdf/materials.xacro -> /home/jinha/rplidar_ws/install/RPlidar_description/share/RPlidar_description/urdf
+copying urdf/RPlidar.gazebo -> /home/jinha/rplidar_ws/install/RPlidar_description/share/RPlidar_description/urdf
+copying urdf/RPlidar.trans -> /home/jinha/rplidar_ws/install/RPlidar_description/share/RPlidar_description/urdf
+creating /home/jinha/rplidar_ws/install/RPlidar_description/share/RPlidar_description/meshes
+copying meshes/Caster_Yoke_RR_1.stl -> /home/jinha/rplidar_ws/install/RPlidar_description/share/RPlidar_description/meshes
+copying meshes/Caster_Yoke_FL_1.stl -> /home/jinha/rplidar_ws/install/RPlidar_description/share/RPlidar_description/meshes
+copying meshes/LeftWheel_1.stl -> /home/jinha/rplidar_ws/install/RPlidar_description/share/RPlidar_description/meshes
+copying meshes/Caster_Wheel_RR_1.stl -> /home/jinha/rplidar_ws/install/RPlidar_description/share/RPlidar_description/meshes
+copying meshes/base_link.stl -> /home/jinha/rplidar_ws/install/RPlidar_description/share/RPlidar_description/meshes
+copying meshes/Caster_Wheel_FR_1.stl -> /home/jinha/rplidar_ws/install/RPlidar_description/share/RPlidar_description/meshes
+copying meshes/Lidar_Link_1.stl -> /home/jinha/rplidar_ws/install/RPlidar_description/share/RPlidar_description/meshes
+copying meshes/Caster_Wheel_RL_1.stl -> /home/jinha/rplidar_ws/install/RPlidar_description/share/RPlidar_description/meshes
+copying meshes/Caster_Wheel_FL_1.stl -> /home/jinha/rplidar_ws/install/RPlidar_description/share/RPlidar_description/meshes
+copying meshes/Caster_Yoke_RL_1.stl -> /home/jinha/rplidar_ws/install/RPlidar_description/share/RPlidar_description/meshes
+copying meshes/Shock_link_1.stl -> /home/jinha/rplidar_ws/install/RPlidar_description/share/RPlidar_description/meshes
+copying meshes/RightWheel_1.stl -> /home/jinha/rplidar_ws/install/RPlidar_description/share/RPlidar_description/meshes
+copying meshes/Shock_link_Mirror__1.stl -> /home/jinha/rplidar_ws/install/RPlidar_description/share/RPlidar_description/meshes
+copying meshes/Caster_Yoke_FR_1.stl -> /home/jinha/rplidar_ws/install/RPlidar_description/share/RPlidar_description/meshes
+creating /home/jinha/rplidar_ws/install/RPlidar_description/share/RPlidar_description/config
+copying config/display.rviz -> /home/jinha/rplidar_ws/install/RPlidar_description/share/RPlidar_description/config
+running install_egg_info
+Copying ../../build/RPlidar_description/RPlidar_description.egg-info to /home/jinha/rplidar_ws/install/RPlidar_description/lib/python3.10/site-packages/RPlidar_description-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/jinha/rplidar_ws/build/RPlidar_description/install.log'

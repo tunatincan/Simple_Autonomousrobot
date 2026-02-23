@@ -1,0 +1,23 @@
+[0.434s] Invoking command in '/home/jinha/rplidar_ws/src/RPlidar_description': PYTHONPATH=/home/jinha/rplidar_ws/build/RPlidar_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jinha/rplidar_ws/install/RPlidar_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/RPlidar_description build --build-base /home/jinha/rplidar_ws/build/RPlidar_description/build install --record /home/jinha/rplidar_ws/build/RPlidar_description/install.log --install-scripts $base/lib/RPlidar_description --single-version-externally-managed install_data
+[0.580s] /usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[0.580s]   warnings.warn(
+[0.586s] running egg_info
+[0.586s] writing ../../build/RPlidar_description/RPlidar_description.egg-info/PKG-INFO
+[0.587s] writing dependency_links to ../../build/RPlidar_description/RPlidar_description.egg-info/dependency_links.txt
+[0.587s] writing entry points to ../../build/RPlidar_description/RPlidar_description.egg-info/entry_points.txt
+[0.587s] writing requirements to ../../build/RPlidar_description/RPlidar_description.egg-info/requires.txt
+[0.587s] writing top-level names to ../../build/RPlidar_description/RPlidar_description.egg-info/top_level.txt
+[0.588s] reading manifest file '../../build/RPlidar_description/RPlidar_description.egg-info/SOURCES.txt'
+[0.589s] writing manifest file '../../build/RPlidar_description/RPlidar_description.egg-info/SOURCES.txt'
+[0.589s] running build
+[0.589s] running build_py
+[0.589s] running install
+[0.589s] running install_lib
+[0.590s] running install_data
+[0.590s] copying urdf/RPlidar.gazebo -> /home/jinha/rplidar_ws/install/RPlidar_description/share/RPlidar_description/urdf
+[0.590s] running install_egg_info
+[0.591s] removing '/home/jinha/rplidar_ws/install/RPlidar_description/lib/python3.10/site-packages/RPlidar_description-0.0.0-py3.10.egg-info' (and everything under it)
+[0.591s] Copying ../../build/RPlidar_description/RPlidar_description.egg-info to /home/jinha/rplidar_ws/install/RPlidar_description/lib/python3.10/site-packages/RPlidar_description-0.0.0-py3.10.egg-info
+[0.592s] running install_scripts
+[0.606s] writing list of installed files to '/home/jinha/rplidar_ws/build/RPlidar_description/install.log'
+[0.622s] Invoked command in '/home/jinha/rplidar_ws/src/RPlidar_description' returned '0': PYTHONPATH=/home/jinha/rplidar_ws/build/RPlidar_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jinha/rplidar_ws/install/RPlidar_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/RPlidar_description build --build-base /home/jinha/rplidar_ws/build/RPlidar_description/build install --record /home/jinha/rplidar_ws/build/RPlidar_description/install.log --install-scripts $base/lib/RPlidar_description --single-version-externally-managed install_data

@@ -1,0 +1,6 @@
+source;share/RPlidar_description/hook/pythonpath.ps1
+source;share/RPlidar_description/hook/pythonpath.dsv
+source;share/RPlidar_description/hook/pythonpath.sh
+source;share/RPlidar_description/hook/ament_prefix_path.ps1
+source;share/RPlidar_description/hook/ament_prefix_path.dsv
+source;share/RPlidar_description/hook/ament_prefix_path.sh
